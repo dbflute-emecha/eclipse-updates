@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+$keyspace-image: url("#{$image-path}/sidebar-keyspace.png");
+$keygloss-image: url("#{$image-path}/sidebar-keygloss.png");
+$keydown-image: url("#{$image-path}/sidebar-keydown.png");
+
+/* ---------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------ sidebar { */
+/* ---------------------------------------------------------------------------------------- */
+#sidebar {
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- css reset { */
+/* ---------------------------------------------------------------------------------------- */
+  a, del, dfn, em, img, q, dl, dt, dd, ol, ul, li {
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+  }
+
+  .logo {
+    margin: {
+      top:17px;
+      right: 0;
+      bottom: 38px;
+      left: 5px;
+    }
+  }
+  // 鍵盤バージョン
+  ul {
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+    border-left: solid 1px #999;
+
+    ul {
+      margin-left: 0;
+      margin-right: 0;
+      border: none;
+
+      li {
+        background: transparent no-repeat 0 8px {
+          image: $keyspace-image;
+        }
+        padding-left: 30px;
+        margin: 0 0 7px 0;
+
+        &.upper-space {
+          padding-top: 15px;
+          background: transparent repeat-y 0 0 {
+            image: $keyspace-image;
+          }
+        }
+      }
+
+      a {
+        padding: 3px 0 0 6px;
+        border-top: solid 2px #eee;
+        border-left: solid 4px #888;
+        border-bottom: solid 3px #333;
+        background: #444 no-repeat 0 0 {
+          image: $keygloss-image;
+        }
+        color: #fff;
+        line-height: 1.05em;
+        font-weight: normal;
+
+        &[href]:hover {
+          background: #111 no-repeat 0 0 {
+            image: $keygloss-image;
+          }
+          border-top-color: #ccc;
+          border-left-color: #333;
+          border-bottom-color: #000;
+          padding-left: 5px;
+          color: #fff;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      padding: 3px 2px 0 2px;
+      background: transparent no-repeat 0 -2px {
+        image: $keyspace-image;
+      }
+      color: #666;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 85%;/*11px*/
+
+      &[href]:hover {
+        background: transparent no-repeat 0 -2px {
+          image: $keydown-image;
+        }
+        color: #333;
+      }
+    }
+  }
+}
+/* ------------------------------------------------------------------------------ sidebar } */

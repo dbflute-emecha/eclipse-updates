@@ -1,0 +1,25 @@
+# -- GitHub Configuration --
+safe: true
+lsi: false
+source: . # top-level directory
+# --------------------------
+
+title: DBFlute EMecha
+
+encoding: 'utf-8'
+
+highlighter: pygments
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+sass:
+  sass_dir: _scss
+
+dbflute_url: http://dbflute.seasar.org
+
+eclipse_doc_url: /eclipse-doc
+
+eclipse_update_url: /eclipse-updates
+

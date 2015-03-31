@@ -1,0 +1,29 @@
+---
+---
+
+@charset "UTF-8";
+// フォント設定
+$font-family-title: 'Architects Daughter', 'Helvetica Neue', "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", Helvetica, Arial, serif;
+$font-family-default: Verdana, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", "MS P Gothic", "ＭＳ Ｐゴシック", sans-serif;
+$font-family-sub-title: Times, "Times New Roman", "Hiragino Mincho Pro", "ヒラギノ明朝 Pro W3", "MS P Mincho", "ＭＳ Ｐ明朝", serif;
+$font-family-code: Monaco, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", "MS P Gothic", "MS Pゴシック", sans-serif;
+
+// 画像保存先
+$image-path:{{site.baseurl}}/image/parts;
+
+a, del, dfn, em, img, q, dl, dt, dd, ol, ul, li {
+  margin: 0px;
+  padding: 0;
+  border: 0;
+}
+
+@import "base";
+
+@import "header";
+
+@import "sidebar";
+
+@import "content";
+
+@import "footer";
+

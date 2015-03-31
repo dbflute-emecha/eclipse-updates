@@ -1,0 +1,6 @@
+_site/
+.sass-cache/
+*.swp
+pkg/
+test/
+.DS_Store

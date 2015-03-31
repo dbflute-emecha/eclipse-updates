@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div id="container" class="{% if page.category %}ct-{{ page.category }}{% endif %}">
+{{ content }}
+    </div>
+  </body>
+</html>

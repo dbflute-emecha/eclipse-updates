@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+$background-container-image: url("#{$image-path}/backside-right.png");
+$background-mainbar-image: url("#{$image-path}/backside-left.png");
+$background-header-image: url("#{$image-path}/header-back.png");
+$background-content-image: url("#{$image-path}/background.png");
+$background-footer-image: url("#{$image-path}/backside-left.png");
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- base layout { */
+/* ---------------------------------------------------------------------------------------- */
+
+body {
+  font-family: $font-family-default;
+  background: {
+    color: #fff;
+  }
+}
+h1, h2, h3, h4, h5 {
+  font-family: $font-family-title;
+}
+
+#container {
+  background: #fff repeat-y top right {
+    image : $background-container-image;
+  }
+  margin-left: 30px;
+  &.ct-top {
+    margin-left: 0px;
+  }
+  width: 850px;
+  position: absolute;
+}
+
+#mainbar {
+  background: transparent repeat-y top left {
+    image : $background-mainbar-image;
+  }
+  margin-left: 160px;
+  padding: 0 40px;/*sideline*/
+}
+#top {
+  background: transparent repeat-y top left {
+    image : $background-mainbar-image;
+  }
+  padding: 0 40px;/*sideline*/
+}
+#header {
+  background: #aad1f0 repeat-x 0 0 {
+    image : $background-header-image;
+  }
+  height: 100px;/*120px*/
+}
+#content {
+  background: #fcffff  repeat-x 0 0 {
+    image : $background-content-image;
+  }
+  border-bottom: solid 1px #666;
+  .ct-top & {
+    border-bottom: none;
+  }
+}
+#sidebar {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#footer {
+  height: 100px;
+  padding-top: 40px;
+  font-size: 77%;/*10px*/
+}
+/* -------------------------------------------------------------------------- base layout } */
