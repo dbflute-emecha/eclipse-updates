@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="DBFlute EMecha">
+      DBFlute Eclipse plugins update site.
+   </description>
+   <category-def name="DBFlute" label="DBFlute"/>
+</site>

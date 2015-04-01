@@ -4,3 +4,5 @@ _site/
 pkg/
 test/
 .DS_Store
+content.jar
+artifacts.jar

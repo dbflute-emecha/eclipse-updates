@@ -17,6 +17,8 @@ kramdown:
 sass:
   sass_dir: _scss
 
+baseurl: /eclipse-updates
+
 dbflute_url: http://dbflute.seasar.org
 
 eclipse_doc_url: /eclipse-doc
