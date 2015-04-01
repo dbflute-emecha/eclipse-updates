@@ -3,5 +3,8 @@
    <description name="DBFlute EMecha">
       DBFlute Eclipse plugins update site.
    </description>
+   <feature url="features/org.dbflute.emecha.feature_0.6.1.201501301538.jar" id="org.dbflute.emecha.feature" version="0.6.1.201501301538">
+      <category name="DBFlute"/>
+   </feature>
    <category-def name="DBFlute" label="DBFlute"/>
 </site>
