@@ -9,5 +9,8 @@
    <feature url="features/org.dbflute.emecha.feature_0.6.2.201504161907.jar" id="org.dbflute.emecha.feature" version="0.6.2.201504161907">
       <category name="DBFlute"/>
    </feature>
+   <feature url="features/org.dbflute.emecha.feature_0.6.3.201507010004.jar" id="org.dbflute.emecha.feature" version="0.6.3.201507010004">
+      <category name="DBFlute"/>
+   </feature>
    <category-def name="DBFlute" label="DBFlute"/>
 </site>
